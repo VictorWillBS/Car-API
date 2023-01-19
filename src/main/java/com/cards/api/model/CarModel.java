@@ -5,6 +5,8 @@ import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Date;
+
 @Data
 @Entity
 @NoArgsConstructor
@@ -24,10 +26,10 @@ public class CarModel {
     @Column(length = 50, nullable = false )
     private String fabricante;
     @Column(length = 50, nullable = false )
-    private String dataFabricacao;
+    private Date dataFabricacao;
     @Column(nullable = false )
     private double valor;
     @Column( nullable = false )
-    private int anoModelo;
+    private Date anoModelo;
 
 }
